@@ -1,0 +1,13 @@
+{
+  "name": "randommoon",
+  "version": "1.0.0",
+  "description": "A simple JavaScript library for generating random values",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
