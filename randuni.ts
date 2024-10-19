@@ -1,4 +1,5 @@
 import { randarr } from "./lib/randarr";
+import { Variable } from "./lib/var";
 const rand = (shape: number[], f: number) =>
   randarr(shape[0], () => parseFloat(Math.random().toFixed(f)));
 export const randuni = (shape: number[] = [1], f: number = 5) => {
@@ -11,5 +12,5 @@ export const randuni = (shape: number[] = [1], f: number = 5) => {
   } else {
     arr = rand(shape, f);
   }
-  return arr;
+  return new Variable(arr,"int");
 };

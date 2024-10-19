@@ -29,4 +29,4 @@ export class Variable {
       this.data = this.data.map((a: any) => this.varadd(x, a));
     }
   }
-}
+} 

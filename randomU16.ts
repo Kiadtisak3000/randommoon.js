@@ -1,3 +1,4 @@
+import { Variable } from "./lib/var";
 import { randlist } from "./randomlist";
 
 const u16: string[] = [
@@ -23,5 +24,5 @@ export const rand16 = (length: number) => {
     for (let i = 0 ; i<length ; i++){
         newarr.push(randlist(u16))
     }
-    return newarr.join("")
+    return new Variable(newarr.join(""),"str")
 };
