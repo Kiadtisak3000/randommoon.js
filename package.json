@@ -13,6 +13,7 @@
     "url": "https://github.com/Kiadtisak3000/randommoon.js.git"
   },
   "devDependencies": {
+    "esbuild-plugin-tsc": "^0.4.0",
     "typescript": "^5.5.4"
   }
 }

@@ -41,5 +41,3 @@ export const randNorm = (
   }
   return new Variable(arr,"float")
 };
-const arr1 = randNorm([5,2],8)
-console.log(arr1.data)
