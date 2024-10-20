@@ -2,7 +2,7 @@
   "name": "randommoon.js",
   "version": "1.0.1",
   "description": "A simple JavaScript library for generating random values",
-  "main": "./dist/rendommon.js",
+  "main": "./dist/index.js",
   "keywords": [
     "javascript",
     "random"
@@ -13,8 +13,6 @@
     "url": "https://github.com/Kiadtisak3000/randommoon.js.git"
   },
   "devDependencies": {
-    "esbuild": "^0.24.0",
-    "esbuild-plugin-tsc": "^0.4.0",
     "typescript": "^5.5.4"
   }
 }
