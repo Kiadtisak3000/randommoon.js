@@ -5,6 +5,19 @@ export class Variable {
     this.data = vars;
     this.type = vtype;
   }
+  public get IsNum (){
+    switch(this.type.toLowerCase()){
+      case "num":
+      case "int":
+      case "float":
+      case "float8":
+      case "float16":
+      case "float32":
+        return true
+      default:
+        return false
+    }
+  }
   public get shape(): Number[] {
     if (!Array.isArray(this.data)) return [0];
     if (!Array.isArray(this.data[0])) return [this.data.length, 0];
@@ -16,9 +29,10 @@ export class Variable {
   private varadd(x: number, arr: number[]) {
     return arr.map((n) => n + x);
   }
+
   public Add(x: number) {
     const shape: Number[] = this.shape;
-    if (shape[0] == 0 && this.type == "num") {
+    if (shape[0] == 0 && this.IsNum) {
       this.data += x;
       return;
     }
