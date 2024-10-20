@@ -1,12 +1,17 @@
 {
-  "name": "randommoon",
-  "version": "1.0.0",
+  "name": "randommoon.js",
+  "version": "1.0.1",
   "description": "A simple JavaScript library for generating random values",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "main": "./dist/index.js",
+  "keywords": [
+    "javascript",
+    "random"
+  ],
+  "author": "Kiadtisak3000",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/Kiadtisak3000/randommoon.js.git"
+  },
   "devDependencies": {
     "typescript": "^5.5.4"
   }
