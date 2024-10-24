@@ -1,6 +1,9 @@
 {
   "name": "randommoon.js",
   "version": "1.0.1",
+  "scripts": {
+    "test": "jest"
+  },
   "description": "A simple JavaScript library for generating random values",
   "main": "./dist/index.js",
   "keywords": [
