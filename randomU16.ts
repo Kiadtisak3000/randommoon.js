@@ -35,6 +35,7 @@ const u16: string[] = [
  * console.log(var1.data); // Output: "a3f2c5b8d1e4" (example)
  */
 export const rand16 = (length: number) => {
+    if(length <= 0) throw new Error("Number of Length (length) must be a positive integer.")
     let newarr:string[] = []
     for (let i = 0 ; i<length ; i++){
         newarr.push(randlist(u16).data)

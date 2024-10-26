@@ -28,5 +28,5 @@ export const Zeros = (shape: number[] = [5]) => {
   } else {
     arr = rand(shape[0]).data;
   }
-  return new Variable(arr,"num");
+  return new Variable(arr,"int");
 };
