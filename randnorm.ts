@@ -37,7 +37,7 @@ export const randNorm = (
         arr.push(randarr(shape[0],gennorm).data)
     }
   }else{
-    arr.push(randarr(shape[0],gennorm).data[0])
+    return new Variable(randarr(shape[0],gennorm).data,"float")
   }
   return new Variable(arr,"float")
 };
