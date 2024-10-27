@@ -22,6 +22,7 @@ import { Variable } from "./lib/var"
  * console.log(randomNumber.value); // Output: 10 (example)
  */
 export const randlist = (arr:any[]) =>{
+    if (arr.length == 0 ) throw new Error("Array (arr) can't be a Empty Array")
     const idx = Math.floor(Math.random() * arr.length)
     return new Variable(arr[idx],"any")
 }
