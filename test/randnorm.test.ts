@@ -9,6 +9,6 @@ describe("Generate Normalize",() =>{
         expect(randNorm([5]).IsNum).toEqual(true)
     })
     test("Fail Test",()=>{
-        expect(randNorm([5])).toEqual(new Variable([],"undefined"))
+        expect(randNorm([])).toEqual(new Variable([],"undefined"))
     })
 })
