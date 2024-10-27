@@ -1,11 +1,13 @@
 # randommoon.js
-
 A simple JavaScript library for generating random values.
+
+[![license](https://img.shields.io/badge/license-MIT_license%20-darkgreen?style=flat-square)](/LICENSE)
 
 ## Installation:
 
 **npm:**
 
+[![npm version](https://img.shields.io/badge/npm-v1.0.12-blue?style=flat-square)](https://www.npmjs.com/package/randommoon.js)
 ```bash
 npm i randommoon.js
 ```
