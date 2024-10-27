@@ -5,7 +5,6 @@ A simple JavaScript library for generating random values.
 # Changelog:
 v1.0.15:
 bug fix*
-
 ## Installation:
 
 **npm:**
