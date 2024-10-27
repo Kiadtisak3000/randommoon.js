@@ -7,6 +7,18 @@
     "javascript",
     "random"
   ],
+  "types": "./dist/index.d.ts",
+  "exports":{
+    ".":{
+      "types":{
+        "default":"./dist/index.d.ts"
+      },
+      "default":{
+        "require":"./dist/index.js",
+        "default":"./dist/index.js"
+      }
+    }
+  },
   "author": "Kiadtisak3000",
   "license": "MIT",
   "repository": {
