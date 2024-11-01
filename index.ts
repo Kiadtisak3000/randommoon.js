@@ -6,7 +6,7 @@ import { randNorm } from "./randnorm";
 import { Linspace } from "./linspace";
 import { randInt } from "./randInt";
 export default {
-  randInt
+  randInt,
   rand16,
   randarr,
   randuni,
