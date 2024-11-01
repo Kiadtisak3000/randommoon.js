@@ -39,5 +39,3 @@ export const randInt = (range: number | number[]) => {
     return y;
   }
 };
-const data = randInt(5).data
-const data2 = randInt([10,50]).data
