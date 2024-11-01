@@ -19,11 +19,14 @@ export class Variable {
     }
   }
   public get shape(): Number[] {
-    if (!Array.isArray(this.data)) return [0];
+    if (!Array.isArray(this.data)){
+      if(this.IsNum||this.type === "str") return [this.data.toString().length,0]
+      else return[0]
+    }
     if (!Array.isArray(this.data[0])) return [this.data.length, 0];
     let sh: number[] = [];
     sh[1] = this.data.length;
-    sh[0] = this.data.reduce((x, y) => Math.max(x, y.length), 0);
+    sh[0] = this.data.reduce((x:any, y:any) => Math.max(x, y.length), 0);
     return sh;
   }
   private varadd(x: number, arr: number[]) {
@@ -43,4 +46,4 @@ export class Variable {
       this.data = this.data.map((a: any) => this.varadd(x, a));
     }
   }
-} 
+}
