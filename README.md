@@ -2,11 +2,8 @@
 A simple JavaScript library for generating random values.
 
 [![license](https://img.shields.io/badge/license-MIT_license%20-darkgreen?style=flat-square)](/LICENSE)
-## Changelog:
-v1.0.15:
-bug fix*
-v1.0.20:
-Add randint Random integer with range
+
+[CHANGELOG](./CHANGELOG.md)
 
 
 ## Installation:
