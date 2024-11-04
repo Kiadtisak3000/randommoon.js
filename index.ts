@@ -5,7 +5,9 @@ import { Zeros } from "./zeros";
 import { randNorm } from "./randnorm";
 import { Linspace } from "./linspace";
 import { randInt } from "./randInt";
+import { randLogNorm_dist } from "./logNorm";
 export default {
+  randLogNorm_dist,
   randInt,
   rand16,
   randarr,
@@ -14,4 +16,4 @@ export default {
   randNorm,
   Linspace
 };
-export { rand16, randarr, randuni, Zeros,randNorm,Linspace,randInt };
+export { rand16, randarr, randuni, Zeros,randNorm,Linspace,randInt,randLogNorm_dist };
