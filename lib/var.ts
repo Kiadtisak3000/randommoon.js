@@ -1,9 +1,14 @@
+import { push_item } from "./var/push";
+
 export class Variable {
   public data: any;
   public type: string;
   constructor(vars: any, vtype: string) {
     this.data = vars;
     this.type = vtype;
+  }
+  public push (value:any) {
+    push_item(this,value)
   }
   public get IsNum (){
     switch(this.type.toLowerCase()){
