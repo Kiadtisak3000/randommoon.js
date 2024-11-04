@@ -6,6 +6,9 @@ A simple JavaScript library for generating random values.
 v1.0.15:
 bug fix*
 
+[CHANGELOG](./CHANGELOG.md)
+
+
 ## Installation:
 
 **npm:**

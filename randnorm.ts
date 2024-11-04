@@ -1,5 +1,11 @@
 import { randarr } from "./lib/randarr";
 import { Variable } from "./lib/var";
+export const gennorm = (mean: number, std: number) => {
+  let a = Math.random(),
+    b = Math.random();
+  const y = Math.sqrt(-2.0 * Math.log(a)) * Math.cos(2.0 * Math.PI * b);
+  return y * std + mean;
+};
 /**
  * Generates a Variable object containing an array of random numbers with a normal (Gaussian) distribution.
  *
@@ -23,21 +29,14 @@ export const randNorm = (
 ) => {
   if (shape.length >= 3 || shape.length <= 0)
     return new Variable([], "undefined");
-  const gennorm = () => {
-    let a = 0,
-      b = 0;
-    while (a === 0) a = Math.random();
-    while (b === 0) b = Math.random();
-    const y = Math.sqrt(-2.0 * Math.log(a)) * Math.cos(2.0 * Math.PI * b);
-    return y * std + mean;
-  };
-  let arr:number[][] = [];
-  if(shape[1]){
-    for(let i =0 ; i < shape[1]; i++){
-        arr.push(randarr(shape[0],gennorm).data)
+  const v_gennorm = () => gennorm(mean, std);
+  let arr: number[][] = [];
+  if (shape[1]) {
+    for (let i = 0; i < shape[1]; i++) {
+      arr.push(randarr(shape[0], v_gennorm).data);
     }
-  }else{
-    return new Variable(randarr(shape[0],gennorm).data,"float")
+  } else {
+    return new Variable(randarr(shape[0], v_gennorm).data, "float");
   }
-  return new Variable(arr,"float")
+  return new Variable(arr, "float");
 };
