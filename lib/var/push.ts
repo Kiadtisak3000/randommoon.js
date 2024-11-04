@@ -7,7 +7,7 @@ export const push_item = (vars: Variable,value:any) => {
     const a_shape = vars.shape;
     a_shape[1] == 0 ? vars.data.push(...value):vars.data.push(value)
   } else {
-    if (typeof value == typeof vars.data && !vars.IsNum) vars.data + value.join();
+    if (typeof value == typeof vars.data && !vars.IsNum) vars.data += value;
     else if (vars.IsNum)
       throw new Error("var.push does not support push value to a numeric variable");
     else throw new TypeError("Type mismatch: Value type doesn't match existing data type.");
