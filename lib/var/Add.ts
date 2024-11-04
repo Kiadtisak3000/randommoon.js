@@ -5,7 +5,7 @@ const varadd = (x: number, arr: number[]) => {
 };
 export const Add = (x:number,vars:Variable) =>{
     const shape: Number[] = vars.shape;
-    if (shape[1] == 0 && vars.IsNum) {
+    if (!Array.isArray(vars.data) && vars.IsNum) {
       vars.data += x;
       return;
     }
