@@ -1,11 +1,12 @@
 {
   "name": "randommoon.js",
-  "version": "1.0.1",
+  "version": "1.0.20",
   "description": "A simple JavaScript library for generating random values",
   "main": "./dist/index.js",
   "keywords": [
     "javascript",
-    "random"
+    "random",
+    "math"
   ],
   "types": "./dist/index.d.ts",
   "exports":{

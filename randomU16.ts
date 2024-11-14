@@ -12,12 +12,12 @@ const u16: string[] = [
   "7",
   "8",
   "9",
-  "A",
-  "B",
-  "C",
-  "D",
-  "E",
-  "F",
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
 ];
 /**
  * Generates a Variable object containing a random string of hexadecimal characters.
