@@ -5,7 +5,8 @@
   "main": "./dist/index.js",
   "keywords": [
     "javascript",
-    "random"
+    "random",
+    "math"
   ],
   "types": "./dist/index.d.ts",
   "exports":{
