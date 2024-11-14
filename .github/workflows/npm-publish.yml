@@ -14,7 +14,7 @@ jobs:
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
+      - run: npm i
       - run: npx tsc
       - run: rm -rf . !(.dist) !package.json !package-lock.json
       - run: npm publish
