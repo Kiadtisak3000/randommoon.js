@@ -16,7 +16,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: npm i
       - run: npx tsc
-      - run: rm -rf . !(.dist) !package.json !package-lock.json
+      - run: find . -maxdepth 1 ! -name "dist" ! -name "package.json" ! -name "README.md" -delete
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
