@@ -14,6 +14,6 @@ jobs:
         with:
           node-version: 20
       - run: git checkout test
-      - run: git merge dev
+      - run: git merge origin/dev
       - run: npm i
       - run: npm run test
