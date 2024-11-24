@@ -1,5 +1,6 @@
 import { Add } from "./var/Add";
 import { IsNum } from "./var/IsNum";
+import { mean } from "./var/mean";
 import { push_item } from "./var/push";
 import { get_shape } from "./var/shape";
 
@@ -21,5 +22,8 @@ export class Variable {
   }
   public Add(x: number) {
     Add(x, this);
+  }
+  public get mean () {
+    return mean(this)
   }
 }
