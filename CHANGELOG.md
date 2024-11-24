@@ -5,3 +5,6 @@ v1.0.20:
 Add randint Random integer with range
 Add Var.push 
 Add Log-Normal Distribution 
+bug fix*
+v1.0.25
+add Var.mean
