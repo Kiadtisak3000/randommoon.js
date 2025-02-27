@@ -8,6 +8,7 @@ import { Variable } from "./lib/var";
  num - The number of evenly spaced samples to generate. Default is 50.
  * @param endpoint - If True, `stop` is the last sample. Otherwise, it is not included. Default is  
  True.
+ * @param num - The number of evenly spaced samples to generate. Default is 50.
  * @returns A Variable object containing the array of evenly spaced numbers.
  *
  * @example
@@ -19,7 +20,7 @@ import { Variable } from "./lib/var";
  * const var2 = linspace(1, 10, 4, false); // Output: [1, 4, 7, 10]
  */
 export const Linspace = (start:number,stop:number,num:number = 50,endpoint:boolean = true) =>{
-    if (num <= 0) {
+    if (!Number.isInteger(num) || num <= 0) {
         throw new Error("Number of samples (num) must be a positive integer.");
       }
     const div = endpoint ? num -1 :num;
@@ -28,5 +29,5 @@ export const Linspace = (start:number,stop:number,num:number = 50,endpoint:boole
     .fill(0)
     .map((_, i) => start + step * i);
 
-  return new Variable(arr, "num");
+  return new Variable(arr, "float");
 }
