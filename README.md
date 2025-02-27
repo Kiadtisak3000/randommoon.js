@@ -5,6 +5,7 @@ A simple JavaScript library for generating random values.
 
 [CHANGELOG](./CHANGELOG.md)
 
+[!["Test Result"](https://github.com/Kiadtisak3000/randommoon.js/actions/workflows/test.yml/badge.svg)](https://github.com/Kiadtisak3000/randommoon.js/actions/workflows/test.yml/)
 
 ## Installation:
 
@@ -14,7 +15,7 @@ A simple JavaScript library for generating random values.
 ```bash
 npm i randommoon.js
 ```
-How to use:
+## Usage:
 
 Import specific functions:
 
@@ -49,4 +50,9 @@ With 2D array:
 const var2 = Zeros([3, 2]); 
 console.log(var2.data); // Output: [[0, 0], [0, 0], [0, 0]]
 console.log(var1.shape) // Output: [3,2]
+```
+## Handling Error:
+```javascript
+const var1 = Zeros([5,5,5])
+if(var1.type == "undefined") throw new Error("Something....")
 ```
