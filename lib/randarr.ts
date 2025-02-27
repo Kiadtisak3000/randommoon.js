@@ -21,7 +21,7 @@ import { Variable } from "./var";
  * console.log(helloArray.data); // Output: ["hello", "hello", "hello"]
  */
 
-export const randarr = (length: number, value = () => "") => {
+export const randarr = (length: number, value:any = () => "") => {
   let arr: any[] = [];
   if (!Number.isInteger(length) || length <= 0) {
     throw new Error("Length (length) must be a positive integer.");
