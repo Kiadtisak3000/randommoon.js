@@ -27,11 +27,12 @@ export const randNorm = (
   mean: number = 0,
   std: number = 1
 ) => {
-  if (shape.length >= 3 || shape.length <= 0)
+  if (shape.length >= 3 || shape.length <= 0||shape.some(dim => dim <= 0))
     return new Variable([], "undefined");
+
   const v_gennorm = () => gennorm(mean, std);
   let arr: number[][] = [];
-  if (shape[1]) {
+  if (shape.length === 2) {
     for (let i = 0; i < shape[1]; i++) {
       arr.push(randarr(shape[0], v_gennorm).data);
     }

@@ -22,8 +22,9 @@ import { Variable } from "./var";
  */
 export const randarr = (length: number, value: any = () => "") => {
   let arr: any[] = [];
-  for (let i = 0; i < length; i++) {
-    arr.push(value());
-  }
-  return new Variable(arr,"any");
+  if (!Number.isInteger(length) || length <= 0) {
+    throw new Error("Length (length) must be a positive integer.");
+}
+  arr = Array.from({length},value)
+  return new Variable<any>(arr,"any");
 };
