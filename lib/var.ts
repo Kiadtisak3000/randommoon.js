@@ -4,10 +4,10 @@ import { mean } from "./var/mean";
 import { push_item } from "./var/push";
 import { get_shape } from "./var/shape";
 
-export class Variable {
-  public data: any;
+export class Variable<T> {
+  public data: T|T[];
   public type: string;
-  constructor(vars: any, vtype: string) {
+  constructor(vars: T|T[], vtype: string) {
     this.data = vars;
     this.type = vtype;
   }
